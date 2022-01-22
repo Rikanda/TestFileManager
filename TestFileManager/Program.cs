@@ -15,7 +15,7 @@ namespace TestFileManager
             int n = l1.list.Count;
             Console.WriteLine(n);
             l1.prntDiscList();
-            Console.WriteLine("Укажите порядковый номер диска для раскрытия списка каталогов:");
+            Console.WriteLine("Укажите порядковый номер диска для раскрытия списка каталогов и файлов:");
             int t = int.Parse(Console.ReadLine());
             l1.prntDirectory(t-1);
 
