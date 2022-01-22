@@ -23,8 +23,16 @@ namespace TestFileManager
 
         public void DiscIntro()
         {
+            Console.WriteLine("Список каталогов:");
             string[] intro = System.IO.Directory.GetDirectories(name);
             foreach(string str in intro)
+            {
+                Console.WriteLine(str);
+            }
+
+            Console.WriteLine("Список файлов:");
+            string[] introFile = System.IO.Directory.GetFiles(name);
+            foreach(var str in introFile)
             {
                 Console.WriteLine(str);
             }
